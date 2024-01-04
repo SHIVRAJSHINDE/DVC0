@@ -1,7 +1,7 @@
 schema: '2.0'
 stages:
   data_split:
-    cmd: python src/data_split.py data/data.csv
+    cmd: python src/data_split.py
     deps:
     - path: src/data_split.py
       hash: md5
@@ -28,8 +28,8 @@ stages:
       nfiles: 2
     - path: src/data_processing.py
       hash: md5
-      md5: 5a3d2586e26760d071684b70d6d3dd45
-      size: 1447
+      md5: d469321bf4b5526b9bcb4eb6a5f69a35
+      size: 1459
     params:
       params.yaml:
         process.dir: data/processed
@@ -89,7 +89,7 @@ stages:
     outs:
     - path: eval/importance.png
       hash: md5
-      md5: 3196af6f0a44819097d7037795aa5772
+      md5: 6b18ebeccb5f9374f4c1d844303f5bb8
       size: 18504
     - path: eval/live/metrics.json
       hash: md5

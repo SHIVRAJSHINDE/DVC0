@@ -11,10 +11,12 @@ def data_processing(data_path):
     return processed_Data
 
 if __name__ =="__main__":
+    
     # args = argparse.ArgumentParser()
     # args.add_argument("--param_yaml",default="params.yaml")
     # parsed_args = args.parse_args()
     # data = data_split(param_yaml_path = parsed_args.param_yaml)
+    
     param_yaml_path = "params.yaml"
     with open(param_yaml_path) as yaml_file:
         param_yaml = yaml.safe_load(yaml_file)

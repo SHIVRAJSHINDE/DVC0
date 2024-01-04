@@ -1,4 +1,4 @@
 [core]
     remote = local
 ['remote "local"']
-    url = D:\Storage_Local\patelsDvc
+    url = D:\MachineLearningProjects\PROJECT\ZDatasets\dvcStorage02
